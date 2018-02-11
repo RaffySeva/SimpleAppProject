@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add Contact</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+        <form ng-submit="addContact()" autocomplete="off">
+          <div class="form-group">
+            <label for="InputFirstname">Firstname</label>
+            <input type="name" placeholder="Firstname" name="Firstname" class="form-control" ng-model="contact.firstname">
+          </div>
+          <div class="form-group">
+            <label for="InputMiddleInitial">Middle Initial</label>
+            <input type="name" placeholder="Middle Initial" name="Middle Initial" class="form-control" ng-model="contact.middleinitial">
+          </div>
+          <div class="form-group">
+            <label for="InputLastname">Lastname</label>
+            <input type="name" placeholder="Lastname" name="Lastname" class="form-control" ng-model="contact.lastname">
+          </div>
+          <div class="form-group">
+            <label for="InputPhoneNumber">Phone Number</label>
+            <input type="number" placeholder="Phone Number" name="Phonenumber" class="form-control" ng-model="contact.phoneNumber">
+          </div>
+          <div class="form-group">
+            <label for="InputCellphoneNumber">Cellphone Number</label>
+            <input type="number" placeholder="Cellphone Number" name="Cellphonenumber" class="form-control" ng-model="contact.cellphoneNumber">
+          </div>
+          <div class="form-group">
+            <label for="InputEmailAddress">Email</label>
+            <input type="email" placeholder="Email" name="Email" class="form-control" ng-model="contact.email">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>

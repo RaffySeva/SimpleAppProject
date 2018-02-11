@@ -1,0 +1,39 @@
+<div class="panel panel-default" ng-init="getContact()">
+  <div class="panel-heading">
+    <h3 class="panel-title">View Contact</h3>
+  </div>
+  <div class="panel-body">
+  	<div class="row">
+  		<div class="col-md-12"> 
+        <div class="col-md-4"><h4>Firstname: </h4></div>
+        <div class="col-md-2"><h4>{{contact.firstname}}</h4></div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-4"><h4>Middle Initial: </h4></div>
+        <div class="col-md-2"><h4>{{contact.middleinitial}}</h4></div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-4"><h4>Lastname: </h4></div>
+        <div class="col-md-2"><h4>{{contact.lastname}}</h4></div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-4"><h4>Phone Number: </h4></div>
+        <div class="col-md-2"><h4>{{contact.phoneNumber}}</h4></div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-4"><h4>Cellphone Number: </h4></div>
+        <div class="col-md-2"><h4>0{{contact.cellphoneNumber}}</h4></div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-4"><h4>Email: </h4></div>
+        <div class="col-md-2"><h4>{{contact.email}}</h4></div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-10">
+          <a href="#!/contacts/edit/{{contact._id}}"><button class="btn btn-primary">Edit</button></a> |
+          <a href="#!" ng-click="removeContact(contact._id)"><button class="btn btn-danger">Delete</button></a>
+        </div>
+      </div>
+  	</div>
+  </div>
+</div>
